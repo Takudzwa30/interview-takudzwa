@@ -1,0 +1,60 @@
+.blogs {
+  background: white;
+}
+
+.blogs h1 {
+  margin-block: 20px 15px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.singleBlog {
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  padding: 15px;
+}
+
+.singleBlog:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.singleBlog h2 {
+  margin-bottom: 10px;
+}
+
+.pagination button {
+  background-color: rgb(0, 153, 255);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid rgb(0, 153, 255);
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.pagination button:hover {
+  border: 1px solid rgb(0, 153, 255);
+  color: rgb(0, 153, 255);
+  background: white;
+}
+
+@media screen and (max-width: 991px) {
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+}
